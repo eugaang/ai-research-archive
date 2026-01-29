@@ -412,32 +412,6 @@ export const papers: Paper[] = [
     domains: ["Efficiency", "LLM"],
     tags: [],
   },
-  {
-    id: 'trigger-optimization-and-event',
-    title: 'Trigger Optimization and Event Classification for Dark Matter Searches in the CYGNO Experiment Using Machine Learning',
-    titleKo: '기계 학습을 사용한 CYGNO 실험에서 암흑 물질 검색을 위한 트리거 최적화 및 이벤트 분류',
-    organization: 'MIT',
-    date: '2026-01',
-    arxivUrl: 'http://arxiv.org/abs/2601.20626v1',
-    summary: 'CYGNO 실험에서는 광학 판독 시간 투영 챔버(TPC)를 사용하여 미세하게 분해된 섬광 이미지를 사용하여 희귀한 저에너지 상호 작용을 검색합니다. 광학 판독은 풍부한 토폴로지 정보를 제공하는 동시에 실시간 tr에 도전하는 크고 희박한 메가픽셀 이미지를 생성합니다.',
-    keyInnovation: '',
-    practicalInsight: '',
-    domains: ["Efficiency", "LLM"],
-    tags: [],
-  },
-  {
-    id: 'singlenodal-spontaneous-symmetry-breaking',
-    title: 'Single-Nodal Spontaneous Symmetry Breaking in NLP Models',
-    titleKo: 'NLP 모델의 단일 노드 자발적 대칭 파괴',
-    organization: 'MIT',
-    date: '2026-01',
-    arxivUrl: 'http://arxiv.org/abs/2601.20582v1',
-    summary: '통계 역학에서 자발적인 대칭 파괴는 해밀턴이 반전 대칭을 유지하지만 저온 자유 에너지가 감소된 대칭을 나타내는 열역학적 한계에서 상전이 중에 주로 발생합니다. 여기서 우리는 자발적인 대칭의 출현을 보여줍니다.',
-    keyInnovation: '',
-    practicalInsight: '',
-    domains: ["LLM"],
-    tags: [],
-  },
 
 
 ];
