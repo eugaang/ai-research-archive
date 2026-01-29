@@ -4,7 +4,16 @@ export type Organization =
   | 'Alibaba'
   | 'OpenAI'
   | 'Anthropic'
-  | 'Meta';
+  | 'Meta'
+  | 'Google'
+  | 'Microsoft'
+  | 'MIT'
+  | 'Stanford'
+  | 'Berkeley'
+  | 'CMU'
+  | 'Princeton'
+  | 'Tsinghua'
+  | 'Peking';
 
 export type Domain =
   | 'LLM'
