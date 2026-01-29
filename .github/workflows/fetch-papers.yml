@@ -1,0 +1,46 @@
+name: Fetch Daily Papers
+
+on:
+  # 매일 UTC 00:00 (한국시간 09:00)
+  schedule:
+    - cron: '0 0 * * *'
+  # 수동 실행
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install -r scripts/requirements.txt
+
+      - name: Fetch papers from arXiv
+        run: |
+          python scripts/fetch_papers.py
+
+      - name: Check for changes
+        id: check
+        run: |
+          git diff --quiet src/data/papers.ts || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Commit and push
+        if: steps.check.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add src/data/papers.ts
+          git commit -m "Auto: daily paper update $(date +'%Y-%m-%d')"
+          git push

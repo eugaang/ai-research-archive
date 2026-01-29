@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Organization colors */
+.org-deepseek {
+  --org-color: #3b82f6;
+}
+
+.org-deepmind {
+  --org-color: #10b981;
+}
+
+.org-alibaba {
+  --org-color: #f97316;
+}
+
+.org-openai {
+  --org-color: #8b5cf6;
+}
+
+.org-anthropic {
+  --org-color: #ec4899;
+}
+
+.org-meta {
+  --org-color: #06b6d4;
+}
