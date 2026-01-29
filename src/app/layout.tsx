@@ -30,6 +30,9 @@ export default function RootLayout({
                 <a href="/timeline" className="hover:text-white transition-colors">
                   Timeline
                 </a>
+                <a href="/graph" className="hover:text-white transition-colors">
+                  Graph
+                </a>
               </div>
             </nav>
           </header>
