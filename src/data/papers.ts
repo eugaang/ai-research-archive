@@ -243,7 +243,7 @@ export const papers: Paper[] = [
     id: 'graphrag',
     title: 'GraphRAG',
     titleKo: '그래프 기반 RAG',
-    organization: 'DeepMind',
+    organization: 'Microsoft',
     date: '2025-08',
     arxivUrl: 'https://arxiv.org/abs/2404.16130',
     githubUrl: 'https://github.com/microsoft/graphrag',
