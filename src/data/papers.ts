@@ -45,19 +45,6 @@ export const papers: Paper[] = [
     tags: ['sparse-attention', 'long-context', 'agent'],
     buildUpon: ['deepseek-r1'],
   },
-  {
-    id: 'deepseek-v4',
-    title: 'DeepSeek-V4',
-    titleKo: '차세대 코딩 전문 모델',
-    organization: 'DeepSeek',
-    date: '2026-02',
-    summary: '코딩 및 장문 문맥 처리에 특화된 차세대 모델 (출시 예정)',
-    keyInnovation: '멀티 파일 프로젝트 단위의 이해도 극대화, 모든 코딩 어시스턴트 압도',
-    practicalInsight: 'SDD 워크플로우 A/B 테스트 후보. API 비용이 타사 대비 매우 저렴하여 운영 비용 절반 이하 절감 가능',
-    domains: ['LLM', 'Agent'],
-    tags: ['coding', 'multi-file', 'cost-efficient', 'upcoming'],
-    buildUpon: ['deepseek-v3.2', 'deepseek-mhc'],
-  },
 
   // DeepMind Papers - AI for Science
   {
