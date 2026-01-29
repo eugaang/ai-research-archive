@@ -45,7 +45,12 @@ HOT_KEYWORDS = [
     'instruction tuning', 'alignment', 'safety', 'multimodal',
     'vision-language', 'code generation', 'math', 'benchmark',
     'scaling law', 'efficient', 'sparse attention', 'distillation',
-    'world model', 'embodied', 'robotics', 'video generation'
+    'world model', 'embodied', 'robotics', 'video generation',
+    # VLM 관련
+    'vlm', 'vision language', 'visual instruction', 'image understanding',
+    'visual reasoning', 'visual question', 'image-text', 'text-to-image',
+    'llava', 'qwen-vl', 'internvl', 'cogvlm', 'visual encoder',
+    'image generation', 'diffusion model', 'stable diffusion'
 ]
 
 # 도메인 매핑
@@ -57,6 +62,13 @@ DOMAIN_MAPPING = {
     'cs.MA': ['Agent'],
     'cs.RO': ['Robotics'],
 }
+
+# 제외 키워드 (AI/ML과 관련 없는 논문 필터링)
+EXCLUDE_KEYWORDS = [
+    'dark matter', 'particle physics', 'quantum field', 'cosmology',
+    'astrophysics', 'condensed matter', 'superconductor', 'gravitational',
+    'black hole', 'neutrino', 'hadron', 'quark', 'thermodynamic'
+]
 
 KEYWORD_TO_DOMAIN = {
     'reasoning': 'Reasoning',
@@ -74,6 +86,13 @@ KEYWORD_TO_DOMAIN = {
     'molecule': 'Science',
     'efficient': 'Efficiency',
     'sparse': 'Efficiency',
+    # VLM
+    'vlm': 'Multimodal',
+    'vision language': 'Multimodal',
+    'visual instruction': 'Multimodal',
+    'image-text': 'Multimodal',
+    'image generation': 'Vision',
+    'diffusion': 'Vision',
 }
 
 
@@ -201,6 +220,12 @@ def fetch_papers() -> list:
         org = detect_organization(authors_text, result.summary)
         if not org:
             continue  # 주요 기관 논문만
+
+        # 제외 키워드 체크 (물리학 등 비관련 논문 제외)
+        text_lower = (result.title + ' ' + result.summary).lower()
+        if any(kw in text_lower for kw in EXCLUDE_KEYWORDS):
+            print(f"    Skipped (non-AI): {result.title[:40]}...")
+            continue
 
         # 제목과 요약 한글 번역
         title_en = result.title.replace('\n', ' ').strip()
