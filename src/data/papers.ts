@@ -599,6 +599,35 @@ export const papers: Paper[] = [
     tags: ["agent", "benchmark", "world-model"],
   },
 
+  // Auto-added: 2026-02-03
+  {
+    id: 'navigating-simply-aligning-deeply',
+    title: 'Navigating Simply, Aligning Deeply: Winning Solutions for Mouse vs. AI 2025',
+    titleKo: '단순한 탐색, 심층적인 정렬: 2025년 마우스 대 AI를 위한 솔루션 승리',
+    organization: 'CMU',
+    date: '2026-02',
+    arxivUrl: 'http://arxiv.org/abs/2602.00982v1',
+    summary: '생물학적 시각 시스템과 일치할 수 있는 인공 에이전트를 개발하는 데 있어 시각적 견고성과 신경 정렬은 여전히 ​​중요한 과제로 남아 있습니다. NeurIPS 2025 Mouse vs. AI: Robust Visual Foraging Competition의 두 트랙 모두에서 Team HCMUS_TheFangs의 승리 접근 방식을 소개합니다. 트랙 1(Vi',
+    keyInnovation: '',
+    practicalInsight: '',
+    domains: ["Reasoning", "Robotics", "RAG"],
+    tags: ["agent", "rag", "alignment"],
+  },
+  {
+    id: 'gradingattack-attacking-large-language',
+    title: 'GradingAttack: Attacking Large Language Models Towards Short Answer Grading Ability',
+    titleKo: 'GradingAttack: 단답형 채점 능력을 향한 대규모 언어 모델 공격',
+    organization: 'Meta',
+    date: '2026-02',
+    arxivUrl: 'http://arxiv.org/abs/2602.00979v1',
+    summary: 'LLM(대형 언어 모델)은 ASAG(자동 단답형 채점)의 놀라운 잠재력을 보여 주었으며 교육 시나리오에서 학생 평가 효율성과 확장성을 크게 향상시켰습니다. 그러나 적대적 조작에 대한 취약성은 자동 시스템에 대한 심각한 우려를 불러일으킵니다.',
+    keyInnovation: '',
+    practicalInsight: '',
+    domains: ["Reasoning", "Agent", "LLM"],
+    tags: [],
+  },
+
+
 
 
 
