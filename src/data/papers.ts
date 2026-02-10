@@ -1023,6 +1023,48 @@ export const papers: Paper[] = [
     tags: ["rag", "efficient"],
   },
 
+  // Auto-added: 2026-02-10
+  {
+    id: 'dynamic-load-model-for',
+    title: 'Dynamic Load Model for Data Centers with Pattern-Consistent Calibration',
+    titleKo: '패턴 일치 교정을 사용한 데이터 센터의 동적 부하 모델',
+    organization: 'MIT',
+    date: '2026-02',
+    arxivUrl: 'http://arxiv.org/abs/2602.07859v1',
+    summary: '데이터 센터의 급속한 성장으로 인해 전력 시스템 분석에서 LEL(대형 전자 부하) 모델링이 점점 더 중요해졌습니다. 이러한 로드는 기존 로드 m에서는 포착할 수 없는 빠른 워크로드 기반 가변성과 보호 기반 연결 끊김 및 재연결 동작을 특징으로 합니다.',
+    keyInnovation: '',
+    practicalInsight: '',
+    domains: ["RAG", "LLM", "Efficiency"],
+    tags: ["rag", "alignment"],
+  },
+  {
+    id: 'fairness-aware-reward-optimization',
+    title: 'Fairness Aware Reward Optimization',
+    titleKo: '공정성 인식 보상 최적화',
+    organization: 'Meta',
+    date: '2026-02',
+    arxivUrl: 'http://arxiv.org/abs/2602.07799v1',
+    summary: '인간 선호도 데이터의 인구통계학적 편향은 보상 모델을 통해 정렬된 LLM으로 체계적인 불공정성을 전파합니다. 인구통계학적 동등성, 동등 확률 또는 반사실적 공정성 구성에 따라 보상 모델을 훈련하는 처리 중인 프레임워크인 Faro(Fairness Aware Reward Optimization)를 소개합니다.',
+    keyInnovation: '',
+    practicalInsight: '',
+    domains: ["Agent", "Reasoning", "LLM"],
+    tags: ["alignment", "benchmark"],
+  },
+  {
+    id: 'direct-softpolicy-sampling-via',
+    title: 'Direct Soft-Policy Sampling via Langevin Dynamics',
+    titleKo: 'Langevin Dynamics를 통한 직접 소프트 정책 샘플링',
+    organization: 'OpenAI',
+    date: '2026-02',
+    arxivUrl: 'http://arxiv.org/abs/2602.07873v1',
+    summary: '강화 학습의 소프트 정책은 정책을 상태-행동 가치 함수에 대한 볼츠만 분포로 정의하여 탐색과 활용의 균형을 맞추기 위한 원칙적인 메커니즘을 제공합니다. 그러나 실제로 그러한 소프트 정책을 실현하는 것은 여전히 ​​어려운 일입니다. 기존 접근 방식은 다음 중 하나에 따라 달라집니다.',
+    keyInnovation: '',
+    practicalInsight: '',
+    domains: ["LLM", "Efficiency", "Reasoning"],
+    tags: ["benchmark"],
+  },
+
+
 
 
 
