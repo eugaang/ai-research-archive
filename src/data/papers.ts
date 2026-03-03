@@ -2358,6 +2358,48 @@ export const papers: Paper[] = [
     tags: ["agent"],
   },
 
+  // Auto-added: 2026-03-03
+  {
+    id: 'chimera-compact-synthetic-data',
+    title: 'CHIMERA: Compact Synthetic Data for Generalizable LLM Reasoning',
+    titleKo: 'CHIMERA: 일반화 가능한 LLM 추론을 위한 컴팩트 합성 데이터',
+    organization: 'DeepSeek',
+    date: '2026-03',
+    arxivUrl: 'http://arxiv.org/abs/2603.00889v1',
+    summary: 'LLM(대형 언어 모델)은 최근 SFT(지도 미세 조정) 및 RL(강화 학습) 기반 고품질 추론 데이터에 대한 사후 교육을 통해 놀라운 추론 기능을 보여주었습니다. 그러나 개방적이고 확장 가능한 환경에서 이러한 기능을 재현하고 확장합니다.',
+    keyInnovation: '',
+    practicalInsight: '',
+    domains: ["RAG", "Agent", "LLM"],
+    tags: ["reasoning", "rag", "chain-of-thought", "cot", "math"],
+  },
+  {
+    id: 'kvslimmer-theoretical-insights-and',
+    title: 'KVSlimmer: Theoretical Insights and Practical Optimizations for Asymmetric KV Merging',
+    titleKo: 'KVSlimmer: 비대칭 KV 병합을 위한 이론적 통찰력 및 실제 최적화',
+    organization: 'MIT',
+    date: '2026-03',
+    arxivUrl: 'http://arxiv.org/abs/2603.00907v1',
+    summary: 'KV(키-값) 캐시의 계산 및 메모리 수요가 증가함에 따라 LLM(대형 언어 모델)의 기능이 크게 제한됩니다. KV 병합이 유망한 솔루션으로 떠오르는 동안 KV 비대칭 및 그래디언트 기반 헤세 근사치의 경험적 관찰에 의존하는 기존 방법',
+    keyInnovation: '',
+    practicalInsight: '',
+    domains: ["Efficiency", "RAG", "LLM"],
+    tags: ["rag", "math", "benchmark", "efficient"],
+  },
+  {
+    id: 'curvatureweighted-capacity-allocation-a',
+    title: 'Curvature-Weighted Capacity Allocation: A Minimum Description Length Framework for Layer-Adaptive Large Language Model Optimization',
+    titleKo: '곡률 가중 용량 할당: 계층 적응형 대형 언어 모델 최적화를 위한 최소 설명 길이 프레임워크',
+    organization: 'MIT',
+    date: '2026-03',
+    arxivUrl: 'http://arxiv.org/abs/2603.00910v1',
+    summary: '대규모 언어 모델의 레이어별 용량은 매우 불균일합니다. 일부 레이어는 손실 감소에 불균형적으로 기여하는 반면 다른 레이어는 거의 중복됩니다. 영향 함수 기반 레이어 스코어링과 같은 이러한 비균일성을 활용하는 기존 방법은 민감도 추정치를 생성하지만 그렇지 않습니다.',
+    keyInnovation: '',
+    practicalInsight: '',
+    domains: ["Efficiency", "Agent", "LLM"],
+    tags: ["efficient"],
+  },
+
+
 
 
 
