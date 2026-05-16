@@ -8183,6 +8183,35 @@ export const papers: Paper[] = [
     tags: ["diffusion-model"],
   },
 
+  // Auto-added: 2026-05-16
+  {
+    id: 'graphs-of-research-citation',
+    title: 'Graphs of Research: Citation Evolution Graphs as Supervision for Research Idea Generation',
+    titleKo: '연구 그래프: 연구 아이디어 생성을 위한 감독으로서의 인용 진화 그래프',
+    organization: 'Alibaba',
+    date: '2026-05',
+    arxivUrl: 'http://arxiv.org/abs/2605.14790v1',
+    summary: '연구 아이디어 생성은 자동화된 과학 연구의 혁신을 주도하는 단계입니다. 최근에는 대규모 언어 모델(LLM)이 아이디어 생성을 대규모로 자동화할 수 있는 가능성을 보여주었습니다. 그러나 기존 방법은 주로 관련 항목의 정적 검색을 통해 아이디어 생성을 이끌어내는 LLM을 조건으로 합니다.',
+    keyInnovation: '',
+    practicalInsight: '',
+    domains: ["Reasoning", "Vision", "LLM"],
+    tags: ["retrieval"],
+  },
+  {
+    id: 'streaming-speechtotext-translation-with',
+    title: 'Streaming Speech-to-Text Translation with a SpeechLLM',
+    titleKo: 'SpeechLLM을 사용하여 음성-텍스트 번역 스트리밍',
+    organization: 'MIT',
+    date: '2026-05',
+    arxivUrl: 'http://arxiv.org/abs/2605.14766v1',
+    summary: '일반적으로 음성을 텍스트로 번역하는 시스템은 음성 인식 및 텍스트-텍스트 번역을 위한 별도의 모듈로 구성됩니다. 이러한 작업을 SpeechLLM에 결합하면 음성에서 준언어 정보를 활용하고 연쇄 오류를 줄일 수 있습니다. 하지만 기존 SpeechLLM 시스템은',
+    keyInnovation: '',
+    practicalInsight: '',
+    domains: ["Reasoning", "Agent", "LLM"],
+    tags: ["alignment"],
+  },
+
+
 
 
 
